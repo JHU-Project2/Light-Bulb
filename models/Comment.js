@@ -1,11 +1,9 @@
-//Need to edit this file
-
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Innovation extends Model {}
+class Comment extends Model {}
 
-Innovation.init(
+Comment.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -13,17 +11,8 @@ Innovation.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    title: {
+    content: {
       type: DataTypes.STRING,
-      allowNull: false,
-    },
-    description: {
-      type: DataTypes.STRING,
-    },
-    date_created: {
-      type: DataTypes.DATE,
-      allowNull: false,
-      defaultValue: DataTypes.NOW,
     },
     user_id: {
       type: DataTypes.INTEGER,
@@ -32,14 +21,21 @@ Innovation.init(
         key: 'id',
       },
     },
+    innovation_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'innovation',
+        key: 'id',
+      },
+    },
   },
   {
     sequelize,
-    timestamps: false,
+    timestamps: true,
     freezeTableName: true,
     underscored: true,
-    modelName: 'innovation',
+    modelName: 'comment',
   }
 );
 
-module.exports = Innovation;
+module.exports = Comment;

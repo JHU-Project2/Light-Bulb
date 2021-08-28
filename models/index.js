@@ -1,5 +1,3 @@
-//Need to edit the foreign keys for Innovation/Comments
-
 const User = require('./User');
 const Innovation = require('./Innovation');
 const Comment = require('./Comment');
