@@ -29,8 +29,6 @@ Innovation.hasMany(Comment, {
 
 Comment.belongsTo(Innovation, {
   foreignKey: 'user_id'
-});
-
-//Do we need to connect Comments to Innovation?  Innovation has many comments.  Comment belongs to Innovation.  
+});  
 
 module.exports = { User, Innovation, Comment };

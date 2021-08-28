@@ -15,13 +15,21 @@ Innovation.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    description: {
+    summary: {
       type: DataTypes.STRING,
     },
-    date_created: {
-      type: DataTypes.DATE,
-      allowNull: false,
-      defaultValue: DataTypes.NOW,
+    image: {
+      type: DataTypes.STRING,
+    },
+    details: {
+      type: DataTypes.STRING,
+    },
+    votes: {
+      type: DataTypes.STRING,
+      defaultValue: 0,
+    },
+    category: {
+      type: DataTypes.STRING,
     },
     user_id: {
       type: DataTypes.INTEGER,
@@ -33,7 +41,7 @@ Innovation.init(
   },
   {
     sequelize,
-    timestamps: false,
+    timestamps: true,
     freezeTableName: true,
     underscored: true,
     modelName: 'innovation',
