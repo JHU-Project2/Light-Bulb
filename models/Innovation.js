@@ -12,24 +12,21 @@ Innovation.init(
       autoIncrement: true,
     },
     title: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: false,
     },
     summary: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
     },
     image: {
       type: DataTypes.STRING,
     },
     details: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
     },
     votes: {
-      type: DataTypes.STRING,
+      type: DataTypes.INTEGER,
       defaultValue: 0,
-    },
-    category: {
-      type: DataTypes.STRING,
     },
     user_id: {
       type: DataTypes.INTEGER,
