@@ -11,6 +11,17 @@ const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+//Adding these lines for the chat app
+const http = require('http');
+const server = http.createServer(app);
+const { Server } = require("socket.io");
+const io = new Server(server);
+
+//Probably need to remove these when we get our routes working
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + '/public/js/chat.html');
+});
+
 // Set up Handlebars.js engine with custom helpers
 const hbs = exphbs.create({ helpers });
 
@@ -36,6 +47,18 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(routes);
 
+//Chat app
+
+io.on('connection', (socket) => {
+  socket.on('chat message', (msg) => {
+    io.emit('chat message', msg);
+  });
+  socket.on('typing', function(data){
+    socket.broadcast.emit('typing', data);
+  });
+});
+
+
 sequelize.sync({ force: false }).then(() => {
-  app.listen(PORT, () => console.log('Now listening'));
+  server.listen(PORT, () => console.log('Now listening'));
 });
