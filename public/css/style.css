@@ -178,3 +178,63 @@ h4 {
 p {
 font-size: 1.2rem;
 color: black
+
+.app-title {
+  font-size: 3rem;
+  background-color: var(--primary);
+  color: var(--dark);
+  padding: 0 10px;
+  display: inline-block;
+  border-radius: var(--border-radius);
+  box-shadow: 6px 5px var(--light-dark);
+}
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.justify-space-around {
+  justify-content: space-around;
+}
+
+.justify-flex-start {
+  justify-content: flex-start
+}
+
+.justify-flex-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-stretch {
+  align-items: stretch;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.col-auto {
+  flex-grow: 1;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
