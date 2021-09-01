@@ -18,7 +18,7 @@ const { Server } = require("socket.io");
 const io = new Server(server);
 
 //Probably need to remove these when we get our routes working
-app.get('/', (req, res) => {
+app.get('/testchat', (req, res) => {
   res.sendFile(__dirname + '/public/js/chat.html');
 });
 
