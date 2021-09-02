@@ -1,3 +1,5 @@
+  
+  
   <head>
         <style>
             body { margin: 0; padding-bottom: 3rem; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
@@ -13,6 +15,9 @@
         </style>
     </head>
   <body>
+    <div>
+      <p id="feedback"></p>
+     </div>
     <ul id="messages"></ul>
     <form id="form" action="">
       <input id="input" autocomplete="off" /><button>Send</button>
@@ -21,7 +26,7 @@
 
     <script src="/socket.io/socket.io.js"></script>
     <script>
-    var socket = io();
+      var socket = io();
     </script>
 
   <script>
@@ -30,6 +35,7 @@
     var messages = document.getElementById('messages');
     var form = document.getElementById('form');
     var input = document.getElementById('input');
+    var feedback = document.getElementById('feedback');
 
     form.addEventListener('submit', function(e) {
       e.preventDefault();
@@ -46,14 +52,15 @@
       window.scrollTo(0, document.body.scrollHeight);
     });
 
-  message.addEventListener('keypress', function(){
-  if(handle.value.length > 0){
-    socket.emit('typing', handle.value);
-  }
+    message.addEventListener('keypress', function(){
+      if(handle.value.length > 0){
+        socket.emit('typing', handle.value);
+      }
+    });
 
-  socket.on('typing', function(data){
-    feedback.innerHTML = '<p><em>' + data + ' is typing a message...</em></p>';
-  });
-  });
-  </script>
+    socket.on('typing', function(data){
+      feedback.innerHTML = '<p><em>' + data + ' is typing a message...</em></p>';
+    });
+
+    </script>
   </body>
