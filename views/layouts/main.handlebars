@@ -4,41 +4,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Tech Blog</title>
-  <link rel="stylesheet" href="/css/jass.css">
-  <link rel="stylesheet" href="/css/style.css">
+  <title>LightBulb</title>
+
+  <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
 <body>
-  <div class="flex-column justify-space-around">
-    <header class="display-flex justify-space-between align-center p-2">
-      <h1>
-        <a href="/">LightBulb</a>
-      </h1>
-      <nav>
-    
-        {{#if logged_in}}
-    
-        <a href="/profile">profile</a> |
-        <button class="no-button" id="logout">logout</button>
-        {{else}}
-        <a href="/login">login</a>
-        {{/if}}
-      </nav>
-    </header>
-    <main class="container container-fluid mt-5">
+  <div class="wrapper">
+      <header class="hero">
+          <div>
+            <nav class"nav">
+                    <a class="link" href="/">Home</a>
+                    <a class="link" href="/dashboard">Dashboard</a>
+                    {{#if loggedIn}}
+                    <a class="link" href="/" id="logout">Logout</a>
+                    {{else}}
+                    <a class="link" href="/login">Login</a>
+                    {{/if}}
+                </nav>          
+          </div>
 
+          <h1 class="app-title">LightBulb</h1>
+      </header>
+
+    <main>
       {{{ body }}}
     </main>
-    <footer>
-      
-    </footer>
   </div>
 
+    {{#if loggedIn}}
+    <script src="/javascript/logout.js"></script>
+    {{/if}}
 
-  {{#if logged_in}}
-  <script src="/js/logout.js"></script>
-  {{/if}}
 </body>
 
 </html>
