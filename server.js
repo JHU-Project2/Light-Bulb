@@ -1,5 +1,6 @@
 const path = require('path');
 const express = require('express');
+const multer = require('multer');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
 const routes = require('./controllers');
@@ -45,6 +46,14 @@ app.use(routes);
 //Probably need to remove these when we get our routes working
 app.get('/testchat', (req, res) => {
   res.sendFile(__dirname + '/public/js/chat/chat.html');
+});
+
+//File upload
+app.post('/upload', upload.single('photo'), (req, res) => {
+  if(req.file) {
+      res.json(req.file);
+  }
+  else throw 'error';
 });
 
 

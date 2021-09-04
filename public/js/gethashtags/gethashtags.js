@@ -1,6 +1,3 @@
-
-
-
 const search = () => {
     //const fetch = require("node-fetch");
 
@@ -13,9 +10,21 @@ const search = () => {
             return response.json();
         })
         .then(function (data) {
-            console.log(data);
-            //Do what next
+            filterData(data);
         });
+}
+
+var resultParentEl = document.getElementById("searchResultsParent");
+const filterData = (data) => {
+    for (var i=0; i < data.data.length; i++) {
+        if (data.data[i].hashtag) {
+            let hash = "#" + data.data[i].hashtag;
+            var btnx = document.createElement("button");
+            btnx.textContent = hash;
+            btnx.classList.add("Btn", "hash");
+            resultParentEl.appendChild(btnx);
+        }
+    }
 }
 
 search();
