@@ -1,0 +1,44 @@
+
+
+
+<div class="split left">
+
+
+
+ {{#if posts.length}}
+
+
+  <h2>Your Posts</h2>
+  {{#each userposts as |post|}}
+  {{> dashboard-postinfo post}}
+  {{/each}}
+
+
+
+{{/if}}
+
+<button type="submit" class="btn"><a class="link" href="/dashboard/new">Create New Post</a></button>
+</div>
+</aside>
+</div>
+</div>
+
+<div class="split right">
+
+
+</section>
+
+
+  <h2>Community Posts</h2>
+<article class="post">
+
+
+    {{#each posts as |post| }}
+    {{> post-info post}}
+    {{/each}}
+
+</article>
+</div>
+</div>
+
+</div>

@@ -49,12 +49,12 @@ app.get('/testchat', (req, res) => {
 });
 
 //File upload
-app.post('/upload', upload.single('photo'), (req, res) => {
-  if(req.file) {
-      res.json(req.file);
-  }
-  else throw 'error';
-});
+//app.post('/upload', upload.single('photo'), (req, res) => {
+  //if(req.file) {
+  //   res.json(req.file);
+ // }
+ // else throw 'error';
+//});
 
 
 sequelize.sync({ force: false }).then(() => {
