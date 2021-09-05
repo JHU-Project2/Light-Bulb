@@ -1,12 +1,12 @@
 
 
 
-
+<div class="split dash-left">
 
  {{#if posts.length}}
 
 
-  <h2>Your Posts</h2>
+  <h2 id="your-posts">Your Posts</h2>
   {{#each posts as |post|}}
   {{> dashboard-postinfo post}}
   {{/each}}
@@ -15,10 +15,16 @@
 
 {{/if}}
 
-<button type="submit" class="btn"><a class="link" href="/dashboard/new">+ New Post</a></button>
+<button type="submit" class="btn"><a class="link" href="/dashboard/new">Create New Post</a></button>
 
 
 
+</div>
 
+<div class="split dash-right">
+
+
+  </div>
 
 <script src="/javascript/add-post.js"></script>
+

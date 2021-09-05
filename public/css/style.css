@@ -1,9 +1,10 @@
 :root {
   --primary: #9dc4eb;
-  --secondary: grey;
-  --tertiary: grey;
+  --secondary:    #378dd3;
+  --tertiary:  #378dd3;
+
   --light-dark: #378dd3;
-  --dark: #252a57;
+  --dark: #242131;
   --border-radius: .3rem;
 }
 
@@ -12,16 +13,18 @@
 }
 
 body {
-  background-color: rgb(153, 166, 202);
+  background-color: white;
   margin: 0;
   padding: 0;
+  top: 100px;
   font-family: "IBM Plex Sans", sans-serif;
   color: var(--dark);
   line-height: 1.5;
   font-size: 24px;
-}
+  background: url(wallpapercave.com/wp/wp1910038.jpg);
+  background-size: cover;
 
-h1,
+}
 h2,
 h5,
 h6 {
@@ -34,7 +37,7 @@ h6 {
 h3 {
   font-weight: 700;
   margin: 0;
-  color: white;
+  color: black;
   line-height: 1.25;
 
 
@@ -63,6 +66,24 @@ p {
   font-size: 1.2rem;
 }
 
+.btn-new-post {
+  font-size: 1.3rem;
+  text-decoration: none;
+  padding: 6px 5px;
+  width: 50%;
+  display: block;
+  margin: 5px 0;
+  border-radius: var(--border-radius);
+  color: white;
+  border: none;
+  outline: none;
+  background-color: var(--light-dark);
+  transform: translate(-1px, -1px);
+  justify-content: center;
+  margin-left: 360px;
+
+}
+
 .btn {
   font-size: 1.3rem;
   text-decoration: none;
@@ -76,6 +97,7 @@ p {
   outline: none;
   background-color: var(--light-dark);
   transform: translate(-1px, -1px);
+
 }
 
 .btn:hover {
@@ -117,7 +139,9 @@ p {
   background-color: var(--dark);
   color: var(--primary);
   text-align:  center;
-  background: url(https://s3.envato.com/files/62a37af4-41d0-4fd1-ba22-e684e53ca6fc/inline_image_preview.jpg)
+  height: 20%;
+
+
 }
 
 .hero p {
@@ -172,6 +196,22 @@ p {
   margin: 0 0 20px 0;
   border: 2px solid var(--dark);
   border-radius: var(--border-radius);
+
+justify-content: center;
+text-align: center;
+
+
+}
+
+.card-login {
+  margin: 0 0 20px 0;
+  border: 2px solid var(--dark);
+  border-radius: var(--border-radius);
+width:50%;
+justify-content: center;
+text-align: center;
+
+
 }
 
 .card-header {
@@ -183,6 +223,7 @@ p {
 
 .card-body {
   padding: 1%;
+  background-color:white;
 }
 
 h4 {
@@ -193,11 +234,12 @@ h4 {
 }
 
 .link {
-  color: rgb(188, 188, 245);
+  color:  rgb(239, 231, 242);
+
 }
 
 .login-link {
-  color: var(--dark);
+  color: white;
 }
 
 nav {
@@ -216,11 +258,14 @@ footer {
 .form-input,
 .form-textarea {
   display: block;
+  color: white;
 }
 
 .form-label {
   font-size: 1.1rem;
   margin: 0 0 0 5px;
+  color:black;
+  font-weight: bold;
 }
 
 .form-input {
@@ -230,6 +275,7 @@ footer {
   font-size: 1.2rem;
   border: 2px solid var(--light-dark);
   border-radius: var(--border-radius);
+  color: black;
 }
 
 .min-100-vh {
@@ -346,28 +392,107 @@ footer {
   width: 50%;
   position: fixed;
   z-index: 1;
-  top: 200px;
+  top: 185px;
   overflow-x: hidden;
   padding-top: 20px;
-  padding-bottom: 100px;
+  padding-bottom: 200px;
 }
 
 /* Control the left side */
 .left {
-  width: 30%;
+  width: 35%;
   left: 0;
+  background: url(https://media.istockphoto.com/photos/exploding-light-bulb-picture-id533334866?k=20&m=533334866&s=612x612&w=0&h=DUb5KXk0BvkTt85lT5ESpcZ8xFHDLjOIZNcAXiccawk=);
+background-repeat: no-repeat;
+background-size: cover;
   background-color: rgb(153, 166, 202);
   text-align: center;
+
 }
 
 /* Control the right side */
 .right {
   right: 0;
-  background-color: rgb(209, 213, 224);
-  width: 70%;
+  background-color: #378dd3;
+  width: 65%;
   text-align:center
 }
 
+.dash-left {
+  width: 99.9%;
+  left: 0;
+background-repeat: no-repeat;
+background-size: cover;
+  background-color: rgb(153, 166, 202);
+  text-align: center;
+  background: url(https://wallpapercave.com/wp/wp1910038.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 300px;
+  padding-right: 300px;
+
+}
+
+/* Control the right side */
+.dash-right {
+  right: 0;
+  background-color: rgb(153, 166, 202);
+  width: 0.1%;
+  text-align:center;
+  background: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpapercave.com%2Flight-bulb-wallpapers&psig=AOvVaw21_r7crn4wIYODlEjQ3435&ust=1630876148466000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLj-1KOd5vICFQAAAAAdAAAAABAD);
+}
+
+.login-left {
+  width: 30%;
+  left: 0;
+background-repeat: no-repeat;
+background-size: cover;
+  background-color: rgb(153, 166, 202);
+  text-align: center;
+  background-color: #242131;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 75px;
+
+
+}
+
+/* Control the right side */
+.login-right {
+  right: 0;
+  background-color: rgb(153, 166, 202);
+  width: 70%;
+  text-align:center;
+  background: url(https://wallpapercave.com/wp/wp1910038.jpg);
+  background-size: cover;
+
+}
+
+
+
 a {
   color:white
+}
+
+#comment-font {
+  font-size: 12pt;
+  font-style: italic;
+}
+
+
+header {
+  height:190px;
+}
+
+#sign-up {
+  color:  #378dd3;
+
+  font-weight: bold;
+  font-size: 16pt;
+}
+#your-posts {
+ text-align: center;
+ color:rgb(145, 190, 238);
+ margin-top: 20px;
 }

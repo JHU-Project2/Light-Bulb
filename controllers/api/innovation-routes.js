@@ -8,7 +8,12 @@ router.get('/', (req, res) => {
     Innovation.findAll({
         attributes: ['id',
             'title',
+            'summary',
             'content',
+            'image',
+            'details',
+            'votes',
+            'user_id',
             'created_at'
         ],
         order: [
@@ -43,7 +48,13 @@ router.get('/:id', (req, res) => {
         attributes: ['id',
             'content',
             'title',
-            'created_at'
+            'summary',
+            'image',
+            'created_at',
+            'details',
+            votes,
+            'user_id'
+
         ],
 
         include: [{
@@ -52,7 +63,7 @@ router.get('/:id', (req, res) => {
         },
         {
             model: Comment,
-            attributes: ['id', 'comment_text', 'innovation_id', 'user_id', 'created_at'],
+            attributes: ['id', 'comment_text', 'innovation_id', 'created_at', 'user_id'],
             include: {
                 model: User,
                    attributes: ['username']
