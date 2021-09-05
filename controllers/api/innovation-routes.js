@@ -1,14 +1,19 @@
 const router = require('express').Router();
-const { Post, User, Comment } = require('../../models');
+const { Innovation, User, Comment } = require('../../models');
 const sequelize = require('../../config/connection');
 const withAuth = require('../../utils/auth');
 
 router.get('/', (req, res) => {
     console.log('======================');
-    Post.findAll({
+    Innovation.findAll({
         attributes: ['id',
             'title',
+            'summary',
             'content',
+            'image',
+            'details',
+            'votes',
+            'user_id',
             'created_at'
         ],
         order: [
@@ -20,7 +25,7 @@ router.get('/', (req, res) => {
         },
         {
             model: Comment,
-            attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
+            attributes: ['id', 'comment_text', 'innovation_id', 'user_id', 'created_at'],
             include: {
                 model: User,
                 attributes: ['username']
@@ -36,14 +41,20 @@ router.get('/', (req, res) => {
 
 });
 router.get('/:id', (req, res) => {
-    Post.findOne({
+    Innovation.findOne({
         where: {
                id: req.params.id
         },
         attributes: ['id',
             'content',
             'title',
-            'created_at'
+            'summary',
+            'image',
+            'created_at',
+            'details',
+            votes,
+            'user_id'
+
         ],
 
         include: [{
@@ -52,7 +63,7 @@ router.get('/:id', (req, res) => {
         },
         {
             model: Comment,
-            attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
+            attributes: ['id', 'comment_text', 'innovation_id', 'created_at', 'user_id'],
             include: {
                 model: User,
                    attributes: ['username']
@@ -66,7 +77,7 @@ router.get('/:id', (req, res) => {
 
     .then(dbPostData => {
         if (!dbPostData) {
-            res.status(404).json({ message: 'No post found with this id' });
+            res.status(404).json({ message: 'No innovation found with this id' });
             return;
         }
         res.json(dbPostData);
@@ -78,7 +89,7 @@ router.get('/:id', (req, res) => {
 });
 
 router.post('/', withAuth, (req, res) => {
-Post.create({
+Innovation.create({
         title: req.body.title,
         content: req.body.content,
         user_id: req.session.user_id
@@ -91,7 +102,7 @@ Post.create({
 });
 
 router.put('/:id', withAuth, (req, res) => {
-    Post.update({
+    Innovation.update({
     title: req.body.title,
             content: req.body.content
         }, {
@@ -100,7 +111,7 @@ router.put('/:id', withAuth, (req, res) => {
             }
         }).then(dbPostData => {
             if (!dbPostData) {
-                   res.status(404).json({ message: 'No post found with this id' });
+                   res.status(404).json({ message: 'No innovation found with this id' });
                 return;
             }
             res.json(dbPostData);
@@ -111,13 +122,13 @@ router.put('/:id', withAuth, (req, res) => {
         });
 });
 router.delete('/:id', withAuth, (req, res) => {
-    Post.destroy({
+    Innovation.destroy({
         where: {
             id: req.params.id
         }
     }).then(dbPostData => {
         if (!dbPostData) {
-    res.status(404).json({ message: 'No post found with this id' });
+    res.status(404).json({ message: 'No innovation found with this id' });
             return;
         }
 
