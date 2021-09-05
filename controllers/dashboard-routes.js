@@ -1,9 +1,9 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
-const { Innovation, User, Comment } = require('../models');
+const { Post, User, Comment } = require('../models');
 const withAuth = require('../utils/auth');
 router.get('/', withAuth, (req, res) => {
-    Innovation.findAll({
+    Post.findAll({
         where: {
             user_id: req.session.user_id
         },
@@ -15,7 +15,7 @@ router.get('/', withAuth, (req, res) => {
         ],
         include: [{
             model: Comment,
-            attributes: ['id', 'comment_text', 'innovation_id', 'user_id', 'created_at'],
+            attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
             include: {
                 model: User,
                 attributes: ['username']
@@ -39,7 +39,7 @@ router.get('/', withAuth, (req, res) => {
         });
 });
 router.get('/edit/:id', withAuth, (req, res) => {
-    User.findOne({
+    Post.findOne({
         where: {
             id: req.params.id
         },
@@ -56,7 +56,7 @@ router.get('/edit/:id', withAuth, (req, res) => {
         {
 
             model: Comment,
-            attributes: ['id', 'comment_text', 'innovation_id', 'user_id', 'created_at'],
+            attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
             include: {
                 model: User,
                 attributes: ['username']
@@ -66,7 +66,7 @@ router.get('/edit/:id', withAuth, (req, res) => {
     })
         .then(dbPostData => {
             if (!dbPostData) {
-                res.status(404).json({ message: 'No innovation found with this id' });
+                res.status(404).json({ message: 'No post found with this id' });
                 return;
             }
 
