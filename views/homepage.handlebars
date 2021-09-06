@@ -7,12 +7,19 @@
  {{#if posts.length}}
 
 
-  <h2 id="your-posts">Your Posts</h2>
+  <h2 id="your-posts">Your Posts</h2>            
+        {{#if loggedIn}}             
+
+  
   {{#each userposts as |post|}}
   {{> dashboard-postinfo post}}
   {{/each}}
 
-
+  {{else}}
+                 
+            </div>                  
+                 
+                    {{/if}}
 
 {{/if}}
 
@@ -21,6 +28,9 @@
 
 
 <div class="split right">
+   {{#if loggedIn}}
+                  
+                    
 
  <h2>Community Chat</h2>
 
@@ -43,6 +53,7 @@
 
   <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
   <script src="/socket.io/socket.io.js"></script>
+ 
   <script>
 
   $(function() {
@@ -327,6 +338,15 @@
 
   </script>
 
+    {{else}}
+                   <div class="logout">
+                     
+                     PLEASE LOG IN TO ACCESS COMMUNITY CHAT
+                     
+                     </div>
+                 
+                    {{/if}}
+
 
   <h2>Community Posts</h2>
 <article class="post">
@@ -337,5 +357,6 @@
     {{/each}}
 
 </article>
+
 
 </div>
