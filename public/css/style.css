@@ -395,13 +395,14 @@ footer {
   top: 150px;
   overflow-x: hidden;
   padding-top: 20px;
+  
   padding-bottom: 200px;
 }
 
 /* Control the left side */
 .left {
   width: 35%;
-  
+
   left: 0;
   background: url(https://media.istockphoto.com/photos/exploding-light-bulb-picture-id533334866?k=20&m=533334866&s=612x612&w=0&h=DUb5KXk0BvkTt85lT5ESpcZ8xFHDLjOIZNcAXiccawk=);
 background-repeat: no-repeat;
