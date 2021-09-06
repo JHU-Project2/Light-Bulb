@@ -12,7 +12,7 @@ async function editFormHandler(event) {
 
     ];
       
-      const response = await fetch(`/api/posts/${id}`, {
+      const response = await fetch(`/api/innovations/${id}`, {
         method: 'PUT',
         body: JSON.stringify({
           post_id: id,
