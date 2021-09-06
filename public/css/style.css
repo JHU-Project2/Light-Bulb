@@ -245,6 +245,9 @@ h4 {
 nav {
   text-align: center;
 }
+nav2 {
+  text-align: right;
+}
 
 footer {
   border-top: 1px solid #ccc;
@@ -395,7 +398,7 @@ footer {
   top: 150px;
   overflow-x: hidden;
   padding-top: 20px;
-  
+
   padding-bottom: 200px;
 }
 
@@ -497,4 +500,21 @@ header {
  text-align: center;
  color:rgb(145, 190, 238);
  margin-top: 20px;
+}
+
+#namelix {
+  margin-left: 15px;
+  justify-content: right;
+  color: rgb(153, 146, 189);
+}
+
+.logout {
+
+ background-color: white;
+ font-size: 20pt;
+height: 45%;
+background: url(https://www.certifiedfinancialguardian.com/images/blog-wp-login.png);
+background-size: 85%;
+background-color: white;
+
 }

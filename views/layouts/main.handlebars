@@ -11,20 +11,25 @@
 
 <body>
   <div class="wrapper">
-      <header class="hero">
+      <div class="hero">
           <div>
-            <nav class"nav">
+            <nav class="nav">
               <h1 class="app-title">LightBulb</h1>
                     <a class="link" href="/">Home</a>
+                       {{#if loggedIn}}
                     <a class="link" href="/dashboard">Dashboard</a>
+                       {{else}}
+                    <a class="link" href=""></a>
+                    {{/if}}        
                     {{#if loggedIn}}
                     <a class="link" href="/" id="logout">Logout</a>
                     {{else}}
                     <a class="link" href="/login">Login</a>
-                    {{/if}}
-                </nav>          
+                    {{/if}}   
+                    </nav>
+                    
           </div>
-
+</div>
           
      
 
