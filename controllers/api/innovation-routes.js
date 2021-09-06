@@ -8,7 +8,6 @@ router.get('/', (req, res) => {
     Innovation.findAll({
         attributes: ['id',
             'title',
-            'summary',
             'content',
             'image',
             'details',
@@ -48,11 +47,10 @@ router.get('/:id', (req, res) => {
         attributes: ['id',
             'content',
             'title',
-            'summary',
             'image',
             'created_at',
             'details',
-            votes,
+            'votes',
             'user_id'
 
         ],

@@ -4,10 +4,13 @@ const router = require('express').Router();
 router.get('/', (req, res) => {
     Innovation.findAll({
         attributes: [
-            'id',
             'title',
+            'id',
             'content',
-            'created_at'
+            'image',
+            'details',
+            'votes',
+            'user_id'
         ],
         include: [{
             model: Comment,
@@ -54,10 +57,14 @@ router.get('/post/:id', (req, res) => {
         },
         attributes: [
             'id',
-            'content',
             'title',
-            'created_at'
+            'content',
+            'image',
+            'details',
+            'votes',
+            'user_id'
         ],
+        
         include: [{
             model: Comment,
             attributes: ['id', 'comment_text', 'innovation_id', 'user_id', 'created_at'],
@@ -95,10 +102,14 @@ router.get('/posts-comments', (req, res) => {
         },
         attributes: [
             'id',
-            'content',
             'title',
-            'created_at'
+            'content',
+            'image',
+            'details',
+            'votes',
+            'user_id'
         ],
+        
         include: [{
             model: Comment,
             attributes: ['id', 'comment_text', 'innovation_id', 'user_id', 'created_at'],

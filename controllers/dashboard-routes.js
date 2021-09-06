@@ -11,7 +11,6 @@ router.get('/', withAuth, (req, res) => {
             'id',
             'title',
             'content',
-            'summary',
             'image',
             'details',
             'votes',

@@ -15,7 +15,7 @@ Innovation.init(
       type: DataTypes.TEXT,
       allowNull: false,
     },
-    summary: {
+    content: {
       type: DataTypes.TEXT,
     },
     image: {

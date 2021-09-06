@@ -1,14 +1,14 @@
 [
   {
     "title": "Connect 11",
-    "summary": "The strategy game that goes to 11!",
+    "content": "The strategy game that goes to 11!",
     "image": "Connect.jpg",
     "details": "I want to create a game that is a take on a modern classic, connect 4.  Wouldn't it be great if you could take this game to 11.  Imagine having a mega-huge version of this game for bars and parties.",
     "user_id": 1
   },
   {
     "title": "Fork Chops",
-    "summary": "Cover any eating situation on-the-go with Fork Chops.",
+    "content": "Cover any eating situation on-the-go with Fork Chops.",
     "image": "ForkChops.jpg",
     "details": "Even when you're away from home, you have your standards—and flimsy plastic takeout utensils just will not do. The reusable ForkChops are not only more stylish, the three-in-one eating utensil—which includes a fork, knife, and chopsticks—covers most any meal you will encounter. ",
     "user_id": 2
