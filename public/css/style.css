@@ -148,6 +148,10 @@ p {
   max-width: 75%;
 }
 
+#lbimage {
+  max-height: 100px;
+}
+
 .app-title {
   font-size: 3rem;
 

@@ -1,9 +1,8 @@
 
 
-<div class="split left">
 
 
-
+<div class="col-lg-3">
  {{#if posts.length}}
 
 
@@ -26,16 +25,29 @@
 <button type="submit" class="btn"><a class="link" href="/dashboard/new">Create New Post</a></button>
 </div>
 
+    <div class = "col-lg-6">
+      <h2>Community Posts</h2>
+      <article class="post">
 
-<div class="split right">
-   {{#if loggedIn}}
+
+        {{#each posts as |post| }}
+        {{> post-info post}}
+        {{/each}}
+
+      </article>
+    </div>
+
+
+    <div class = "col-lg-3">
+
+        {{#if loggedIn}}
                   
                     
 
  <h2>Community Chat</h2>
 
 
-  <link rel="stylesheet" href="../../css/chatstyle.css">
+  
 <ul class="pages">
     <li class="chat page">
       <div class="chatArea">
@@ -337,26 +349,15 @@
 
 
   </script>
-
-    {{else}}
-                   <div class="logout">
-                     
-                     PLEASE LOG IN TO ACCESS COMMUNITY CHAT
-                     
-                     </div>
-                 
-                    {{/if}}
-
-
-  <h2>Community Posts</h2>
-<article class="post">
-
-
-    {{#each posts as |post| }}
-    {{> post-info post}}
-    {{/each}}
-
-</article>
-
-
+      {{else}}
+        <div class="logout">
+          
+          PLEASE LOG IN TO ACCESS COMMUNITY CHAT
+          
+        </div>
+      {{/if}}
 </div>
+
+
+
+
