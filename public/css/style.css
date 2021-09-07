@@ -522,3 +522,36 @@ background-size: 85%;
 background-color: white;
 
 }
+
+.title {
+  font-size: 80%;
+}
+
+.chat.page {
+  display: none;
+}
+
+.chatArea {
+  height: 100%;
+  padding-bottom: 60px;
+  
+}
+
+.messages {
+  height: 100%;
+  margin: 0;
+  padding: 10px 20px 10px 20px;
+  word-wrap: break-word;
+}
+
+.username {
+  font-weight: 700;
+  overflow: hidden;
+  padding-right: 15px;
+  text-align: right;
+}
+
+.message.typing .messageBody {
+  color: gray;
+}
+
