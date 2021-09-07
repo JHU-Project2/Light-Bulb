@@ -21,11 +21,15 @@ body {
   color: var(--dark);
   line-height: 1.5;
   font-size: 24px;
-  background: url(wallpapercave.com/wp/wp1910038.jpg);
+  background: url(https://wallpapercave.com/wp/wp1910038.jpg);
   background-size: cover;
 
 }
-h2,
+h2 {
+  color:white;
+
+}
+
 h5,
 h6 {
   font-weight: 700;
@@ -40,7 +44,12 @@ h3 {
   color: black;
   line-height: 1.25;
 
+}
 
+.title {
+
+  font-size: 16pt;
+  justify-content: left;
 }
 
 .link-color {
@@ -142,6 +151,7 @@ p {
   height: 20%;
 
 
+
 }
 
 .hero p {
@@ -239,6 +249,7 @@ h4 {
 
 .link {
   color:  rgb(239, 231, 242);
+  margin-left: 7px;
 
 }
 
@@ -246,11 +257,9 @@ h4 {
   color: white;
 }
 
-nav {
-  text-align: center;
-}
-nav2 {
-  text-align: right;
+.navbar {
+
+justify-content: center;
 }
 
 footer {
@@ -462,7 +471,8 @@ background-size: cover;
 
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 75px;
+  padding-top: 70px;
+  margin-top: -26px;
 
 
 }
@@ -474,7 +484,9 @@ background-size: cover;
   width: 70%;
   text-align:center;
   background: url(https://wallpapercave.com/wp/wp1910038.jpg);
-  background-size: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-top: -26px;
 
 }
 
@@ -514,12 +526,36 @@ header {
 
 .logout {
 
- background-color: white;
+
  font-size: 20pt;
-height: 45%;
-background: url(https://www.certifiedfinancialguardian.com/images/blog-wp-login.png);
-background-size: 85%;
+height: 100%;
+background: url(https://ps.w.org/login-customizer/assets/icon-256x256.png?rev=2455454);
+background-size: 100%;
+background-repeat: no-repeat;
 background-color: white;
+
+}
+
+.col-lg-6 {
+  text-align: center;
+
+  height:100%;
+}
+
+.col-lg-3 {
+  text-align: center;
+  background: url(https://media.istockphoto.com/photos/exploding-light-bulb-picture-id533334866?k=20&m=533334866&s=612x612&w=0&h=DUb5KXk0BvkTt85lT5ESpcZ8xFHDLjOIZNcAXiccawk=);
+  width: 100%;
+
+}
+
+.container-fluid {
+  height:5%;
+}
+
+#chat {
+  background: url(https://static.techgrapple.com/wp-content/uploads/2016/08/rainbow-whatsapp-chat-wallpaper.png);
+  background-size: 100%;
 
 }
 
@@ -554,4 +590,3 @@ background-color: white;
 .message.typing .messageBody {
   color: gray;
 }
-

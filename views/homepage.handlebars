@@ -13,17 +13,16 @@
   {{#each userposts as |post|}}
   {{> dashboard-postinfo post}}
   {{/each}}
-
+<button type="submit" class="btn"><a class="link" href="/dashboard/new">Create New Post</a></button>
   {{else}}
-                 
-            </div>                  
-                 
+                                     
                     {{/if}}
 
 {{/if}}
 
-<button type="submit" class="btn"><a class="link" href="/dashboard/new">Create New Post</a></button>
+
 </div>
+
 
     <div class = "col-lg-6">
       <h2>Community Posts</h2>
@@ -38,7 +37,7 @@
     </div>
 
 
-    <div class = "col-lg-3">
+    <div class = "col-lg-3" id = "chat">
 
         {{#if loggedIn}}
                   
