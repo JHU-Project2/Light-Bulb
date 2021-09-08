@@ -533,7 +533,7 @@ height: 100%;
 background: url(https://ps.w.org/login-customizer/assets/icon-256x256.png?rev=2455454);
 background-size: 80%;
 background-repeat: no-repeat;
-background-position: top;
+background-position: center 25px;
 background-color: transparent;
 position: absolute;
 
@@ -640,4 +640,8 @@ margin:10px
 
 #brandname {
   color:blue
+}
+
+.productImage {
+  max-width: 200px;
 }

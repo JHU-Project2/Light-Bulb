@@ -51,6 +51,7 @@ router.get('/edit/:id', withAuth, (req, res) => {
         attributes: ['id',
             'title',
             'content',
+            'image',
             'created_at'
         ],
         include: [{

@@ -1,27 +1,47 @@
 [
   {
     "comment_text": "I love things that go to 11!  Perhaps the game could come in cacoon for storage.",
-    "user_id": "1",
+    "user_id": "2",
     "innovation_id": "1"
   },
   {
     "comment_text": "Will the game be bigger than 18 inches?",
-    "user_id": "2",
+    "user_id": "3",
     "innovation_id": "1"
   },
   {
     "comment_text": "I like the way you think.  It will be bigger than Stongehenge.",
-    "user_id": "1",
+    "user_id": "2",
     "innovation_id": "1"
   },
   {
     "comment_text": "Perhaps each one could just have a spork",
-    "user_id": "2",
+    "user_id": "3",
     "innovation_id": "2"
   },
   {
     "comment_text": "Multi-functional.  Great idea.  Will will ask our user group.",
-    "user_id": "1",
+    "user_id": "2",
     "innovation_id": "2"
+  },
+  {
+    "comment_text": "I could really use this at the Orioles games, although I wish it didn't have a yankees logo.",
+    "user_id": "2",
+    "innovation_id": "3"
+  },
+  {
+    "comment_text": "You could get any team on it, even ones that never win.  :)",
+    "user_id": "3",
+    "innovation_id": "3"
+  },
+  {
+    "comment_text": "Could they make this for people with astigmatism.  :)",
+    "user_id": "3",
+    "innovation_id": "4"
+  },
+  {
+    "comment_text": "I will ask our head researcher is that is possible.",
+    "user_id": "2",
+    "innovation_id": "4"
   }
 ]
