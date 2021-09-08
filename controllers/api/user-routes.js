@@ -27,7 +27,9 @@ router.get('/:id', (req, res) => {
             'image',
             'details',
             'votes',
-            'user_id'
+            'user_id',
+            'id',
+            'created_at'
         ]
             
         },

@@ -41,7 +41,7 @@ h6 {
 h3 {
   font-weight: 700;
   margin: 0;
-  color: black;
+  color: white;
   line-height: 1.25;
 
 }
@@ -49,7 +49,7 @@ h3 {
 .title {
 
   font-size: 16pt;
-  justify-content: left;
+  justify-content: center;
 }
 
 .link-color {
@@ -60,6 +60,7 @@ h3 {
 
 main {
   margin: 20px auto;
+
   width: 94%;
 }
 
@@ -530,9 +531,11 @@ header {
  font-size: 20pt;
 height: 100%;
 background: url(https://ps.w.org/login-customizer/assets/icon-256x256.png?rev=2455454);
-background-size: 100%;
+background-size: 80%;
 background-repeat: no-repeat;
-background-color: white;
+background-position: bottom;
+background-color: transparent;
+
 
 }
 
@@ -544,8 +547,9 @@ background-color: white;
 
 .col-lg-3 {
   text-align: center;
-  background: url(https://media.istockphoto.com/photos/exploding-light-bulb-picture-id533334866?k=20&m=533334866&s=612x612&w=0&h=DUb5KXk0BvkTt85lT5ESpcZ8xFHDLjOIZNcAXiccawk=);
-  width: 100%;
+
+
+
 
 }
 
@@ -553,11 +557,7 @@ background-color: white;
   height:5%;
 }
 
-#chat {
-  background: url(https://static.techgrapple.com/wp-content/uploads/2016/08/rainbow-whatsapp-chat-wallpaper.png);
-  background-size: 100%;
 
-}
 
 .title {
   font-size: 80%;
@@ -565,6 +565,7 @@ background-color: white;
 
 .chat.page {
   display: none;
+ 
 }
 
 .chatArea {
@@ -588,5 +589,36 @@ background-color: white;
 }
 
 .message.typing .messageBody {
-  color: gray;
+  color:gray;
+}
+
+
+
+.chatTitle {
+  text-align: center;
+
+}
+
+.message {
+  color: greenyellow
+}
+
+#chat {
+  background-color: black;
+  justify-content: center;
+
+
+}
+
+.form {
+  justify-content: left;
+  margin-right: 30px;
+
+}
+
+.usernameInput {
+  width:110%
+}
+.inputMessage {
+  width:100%
 }
