@@ -7,6 +7,9 @@
     <input name="post-title" type="text" value="{{post.title}}" class="form-input" />
     <label class="form-label" for="content">Content</label>
     <input name="content" type="text" value="{{post.content}}" class="form-input" />
+      {{#if post.image}}
+        <img class="productImage" src = "/images2/{{post.image}}"></img>
+      {{/if}}
     <button type="submit" class="btn">Update Post</button>
     <button type="button" class="delete-post-btn btn">Delete Post</button>
   </form>

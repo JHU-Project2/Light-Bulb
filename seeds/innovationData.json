@@ -4,13 +4,31 @@
     "content": "The strategy game that goes to 11!",
     "image": "Connect.jpg",
     "details": "I want to create a game that is a take on a modern classic, connect 4.  Wouldn't it be great if you could take this game to 11.  Imagine having a mega-huge version of this game for bars and parties.",
-    "user_id": 1
+    "user_id": 1,
+    "innovation_id": 1
   },
   {
     "title": "Fork Chops",
     "content": "Cover any eating situation on-the-go with Fork Chops.",
     "image": "ForkChops.jpg",
-    "details": "Even when you're away from home, you have your standards—and flimsy plastic takeout utensils just will not do. The reusable ForkChops are not only more stylish, the three-in-one eating utensil—which includes a fork, knife, and chopsticks—covers most any meal you will encounter. ",
-    "user_id": 2
+    "details": "Even when you're away from home, you have your standards—and flimsy plastic takeout utensils just will not do. The reusable ForkChops are not only more stylish, the three-in-one eating utensil—which includes a fork, knife, and chopsticks—covers most any meal you will encounter.",
+    "user_id": 2,
+    "innovation_id": 2
+  },
+  {
+    "title": "Gameday Happy Meal",
+    "content": "Use one cup holder to secure your entire meal on game day.",
+    "image": "gameday.jpg",
+    "details": "This innovtion can hold your fries, your chicken tenders, and your drink with a straw.",
+    "user_id": 3,
+    "innovation_id": 3
+  },
+  {
+    "title": "Zoomable Contact Lenses",
+    "content": "The lenses are able to track eye movements and zoom function is activated by blinking twice.",
+    "image": "zoomable.jpg",
+    "details": "The lenses are also able to respond to the electrooculographic signals of your eye. These amazing biomimetic lenses are able to detect and respond to these signals. Their zoom function works much like that of a regular camera lens.",
+    "user_id": 2,
+    "innovation_id": 4
   }
 ]
