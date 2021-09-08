@@ -533,8 +533,9 @@ height: 100%;
 background: url(https://ps.w.org/login-customizer/assets/icon-256x256.png?rev=2455454);
 background-size: 80%;
 background-repeat: no-repeat;
-background-position: bottom;
+background-position: top;
 background-color: transparent;
+position: absolute;
 
 
 }
@@ -617,10 +618,10 @@ background-color: transparent;
 }
 
 .usernameInput {
-  width:110%
+  width:100%
 }
 .inputMessage {
-  width:100%
+  width:99%
 }
 
 #hashsuggestions{
@@ -631,4 +632,8 @@ background-color: transparent;
 input {
 margin:10px
 
+}
+
+#login-text{
+  margin-top:275px;
 }
