@@ -2,16 +2,16 @@
   {
     "username": "jimmycone4ever",
     "password": "temp12345",
-    "user_id": 1
+    "id": 1
   },
   {
     "username": "shooters00",
     "password": "temp12345",
-    "user_id": 2
+    "id": 2
   },
   {
     "username": "hot2code",
     "password": "temp12345",
-    "user_id": 3
+    "id": 3
   }
 ]
