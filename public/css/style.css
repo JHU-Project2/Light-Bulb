@@ -622,3 +622,13 @@ background-color: transparent;
 .inputMessage {
   width:100%
 }
+
+#hashsuggestions{
+
+  font-size: 75%;
+}
+
+input {
+margin:10px
+
+}

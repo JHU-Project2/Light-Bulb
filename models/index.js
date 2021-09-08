@@ -17,11 +17,11 @@ User.hasMany(Comment, {
 });
 
 Comment.belongsTo(User, {
-  foreignKey: 'innovation_id'
+  foreignKey: 'user_id'
 });
 
 Innovation.hasMany(Comment, {
-  foreignKey: 'user_id',
+  foreignKey: 'innovation_id',
   onDelete: 'CASCADE'
 });
 
