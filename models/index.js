@@ -21,7 +21,7 @@ Comment.belongsTo(User, {
 });
 
 Innovation.hasMany(Comment, {
-  foreignKey: 'user_id',
+  foreignKey: 'innovation_id',
   onDelete: 'CASCADE'
 });
 

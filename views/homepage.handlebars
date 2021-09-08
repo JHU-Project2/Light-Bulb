@@ -43,24 +43,24 @@
                   
                     
 
- <h2>Community Chat</h2>
+ <h2 class = "chatTitle">Community Chat</h2>
 
 
   
-<ul class="pages">
-      <li class="login page">
+<div class="pages">
+      <div class="login page">
       <div class="form">
         <h3 class="title">What's your nickname?</h3>
         <input class="usernameInput" type="text" maxlength="14" />
       </div>
-    </li>
-    <li class="chat page">
+    </div>
+    <div class="chat page">
       <div class="chatArea">
         <ul class="messages"></ul>
       </div>
       <input class="inputMessage" placeholder="Type here..."/>
-    </li>
-  </ul>
+    </div>
+  </div>
 
   <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
   <script src="/socket.io/socket.io.js"></script>
@@ -294,6 +294,7 @@
       socket.on('login', (data) => {
         connected = true;
         // Display the welcome message
+        
         const message = 'Welcome to Lightbulb Chat – ';
         log(message, {
           prepend: true
@@ -351,7 +352,7 @@
       {{else}}
         <div class="logout">
           
-          PLEASE LOG IN TO ACCESS COMMUNITY CHAT
+         <h3> PLEASE LOG IN TO ACCESS COMMUNITY CHAT</h3>
           
         </div>
       {{/if}}

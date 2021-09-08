@@ -43,14 +43,12 @@ router.get('/', withAuth, (req, res) => {
         });
 });
 router.get('/edit/:id', withAuth, (req, res) => {
-    User.findOne({
+    Innovation.findOne({
         where: {
             id: req.params.id
         },
 
         attributes: ['id',
-          'username',
-          'password',
             'title',
             'content',
             'created_at'

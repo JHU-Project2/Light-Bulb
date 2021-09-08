@@ -10,6 +10,7 @@ router.get('/', (req, res) => {
             'image',
             'details',
             'votes',
+            'created_at',
             'user_id'
         ],
         include: [{
@@ -62,6 +63,7 @@ router.get('/post/:id', (req, res) => {
             'image',
             'details',
             'votes',
+            'created_at',
             'user_id'
         ],
         
@@ -107,6 +109,7 @@ router.get('/posts-comments', (req, res) => {
             'image',
             'details',
             'votes',
+            'created_at',
             'user_id'
         ],
         
