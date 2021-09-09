@@ -25,7 +25,7 @@ From there, follow the following instructions to log in:
  
 4. Click “Login”
 
-##U sage
+## Usage
 Once you log in, you will see your account’s dashboard, where you can create new posts.
 
 When you select the “Create New” option, you will be redirected to a new page to create your post. The page will also present you with two other options:
