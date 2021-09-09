@@ -9,8 +9,9 @@
 
 Welcome to Light Bulb, an online think tank where entrepreneurs can present business ideas, ask for feedback and suggestions, and collaborate with like-minded innovators to launch new enterprises.
 
-##ILogin
-Click [here] (https://desolate-harbor-35577.herokuapp.com/) to access LightBulb’s homepage. You should see a window that looks like the following:
+##Login
+
+Click [here](https://desolate-harbor-35577.herokuapp.com/) to access LightBulb’s homepage. You should see a window that looks like the following:
 
 {INSERT SCREENSHOT]
 
