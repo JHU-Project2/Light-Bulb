@@ -5,11 +5,11 @@
 
 - [Usage](#usage)
 
-##Description
+## Description
 
 Welcome to Light Bulb, an online think tank where entrepreneurs can present business ideas, ask for feedback and suggestions, and collaborate with like-minded innovators to launch new enterprises.
 
-##Login
+## Login
 
 Click [here](https://desolate-harbor-35577.herokuapp.com/) to access LightBulb’s homepage. You should see a window that looks like the following:
 
@@ -25,7 +25,7 @@ From there, follow the following instructions to log in:
  
 4. Click “Login”
 
-##Usage
+##U sage
 Once you log in, you will see your account’s dashboard, where you can create new posts.
 
 When you select the “Create New” option, you will be redirected to a new page to create your post. The page will also present you with two other options:
