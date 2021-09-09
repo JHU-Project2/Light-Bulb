@@ -1,15 +1,42 @@
-LightBulb
-
-[Description](#description)
-
-[Login](#login)
-
-[Usage](#usage)
-
-
 ## Description
 
 Welcome to Light Bulb, an online think tank where entrepreneurs can present business ideas, ask for feedback and suggestions, and collaborate with like-minded innovators to launch new enterprises.
+
+## Demo Video (w/audio)
+https://drive.google.com/file/d/1Y7c4otvcCveAKAUCvfX8Vv3VE46qFEm8/view?usp=sharing
+
+![LightBulb2](https://user-images.githubusercontent.com/80861572/132765071-1e6c1718-f515-472c-b0f8-4ee5c07151c1.png)
+
+
+#### Table of Contents
+1. [Feature List](#features)
+2. [Resources](#resources)
+3. [Image](#image)
+4. [Login](#login)
+5. [Usage](#usage)
+6. [Contributors](#contributors)
+
+## Features:
+
+* View and comment on innovations
+* Collaborate with other users of the app
+* Create, update, and delete innovations
+* Retrieve hashtags for new posts and getting branding assistance
+* See the innovations that you have created in the app
+
+## Image:
+![LightbulbApp](https://user-images.githubusercontent.com/80861572/132767417-60e5bff3-00b0-4aab-96d0-ef6af47590b1.png)
+
+## Resources:
+
+- Javascript, HTML, CSS, Bootstrap
+- Node, Express, Expression-Session
+- MySQL, Sequelize
+- Axios
+- Bcrypt
+- Handlebars
+- Socket.IO
+- RiteKit API
 
 
 ## Login
@@ -46,4 +73,7 @@ If you require further assistance, please review the following LightBulb tutoria
 
 [LightBulb Tutorial](https://drive.google.com/file/d/1Y7c4otvcCveAKAUCvfX8Vv3VE46qFEm8/view)
 
-
+## Contributors:
+* [Cory Piette](https://github.com/coryjpiette) 
+* [Ed Fatula](https://github.com/shooters00)
+* [Karim Gomez](https://github.com/kgomez1990) 
