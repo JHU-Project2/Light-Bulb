@@ -1,4 +1,4 @@
-# Light-Bulb
+# LightBulb
 - [Description](#description)
 
 - [Login](#Login)
