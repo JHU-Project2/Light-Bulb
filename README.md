@@ -7,6 +7,8 @@ https://drive.google.com/file/d/1Y7c4otvcCveAKAUCvfX8Vv3VE46qFEm8/view?usp=shari
 
 ![LightBulb2](https://user-images.githubusercontent.com/80861572/132765071-1e6c1718-f515-472c-b0f8-4ee5c07151c1.png)
 
+## Presentation
+https://docs.google.com/presentation/d/1mIbkAUqo-c7hqzUQaFSkrM2YxB8X7Nik/edit?usp=sharing&ouid=107062165843270237488&rtpof=true&sd=true
 
 #### Table of Contents
 1. [Feature List](#features)
