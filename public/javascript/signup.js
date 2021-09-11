@@ -23,7 +23,7 @@ async function signupFormHandler(event) {
             document.location.replace('/dashboard');
 
         } else {
-            alert(response.statusText);
+            alert("Password needs to be 8 characters.");
         }
     }
 }
